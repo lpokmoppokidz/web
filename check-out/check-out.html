@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="check-out.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<body>
+<div class="web-layout">
+    <div class="info-panel">
+        <h1>Daniel Wellington</h1>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <table>
+                <tr>
+                    <td><input type="email" name="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="news-offers">
+                        <label for="news-offers" style="vertical-align: top">Email me with news and offers</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="shipping-address">
+            <h2>Shipping Address</h2>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label for="country/regions"></label>
+                        <select id="country/regions">
+                            <option value="..."></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="First name"></td>
+                    <td><input type="text" placeholder="Last name"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="Company (Optional)"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="Address"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="Apartment, suite, etc. (optional)"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="City"></td>
+                    <td><input type="number" placeholder="Postal code (optional)"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="tel" placeholder="Phone"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="save-info">
+                        <label for="save-info" style="vertical-align: top;">Save this information for next time</label>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div style="width: 100%; margin-bottom: 50px; margin-top: 30px;">
+            <table>
+                <tr>
+                    <td><a href="" style="text-decoration: none; color: black;"><i class="fa fa-angle-left" aria-hidden="true"></i></i> Return to cart</a></td>
+                    <td style="text-align: right;"><button style="background-color: #00081b; color: #e6e6e6; border: none">Continue to shipping</button></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div class="footer">
+            <a href="">Refund policy</a>
+            <a href="">Privacy policy</a>
+            <a href="">Terms of service</a>
+        </div>
+    </div>
+    <div class="summary-panel">
+        <div class="item-list">
+            <table>
+                <tr>
+                    <td rowspan="2"><img src="img/item-1.avif"></td>
+                    <td style="vertical-align: bottom">Quadro Cherry Bloosom</td>
+                    <td rowspan="2" style="text-align: right; font-size: x-large">$229.00</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; font-size: smaller; opacity: 50%;">Rose Gold / 20x26mm</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <table class="discount">
+            <tr>
+                <td><input type="text" id="discount-code" placeholder="Discount code"></td>
+                <td style="text-align: right">
+                    <button style="width: 100%; padding-top: 17px; padding-bottom: 17px;">apply</button>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <div class="price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td style="text-align: right; font-size: x-large">$229.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td style="text-align: right; opacity: 50%">Calculated at next step</td>
+                </tr>
+            </table>
+            <hr>
+            <table style="font-weight: bolder">
+                <tr>
+                    <td>Total</td>
+                    <td style="text-align: right">
+                        <div style="opacity: 50%; display: inline; vertical-align: middle; margin-right: 10px">
+                            USD
+                        </div>
+                        <div style="font-size: xx-large; display: inline; vertical-align: middle">$229.00</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
