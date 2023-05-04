@@ -22,3 +22,9 @@ const close2 = document.getElementById("close2");
 close2.addEventListener("click", () => {
     container2.classList.remove("active");
 });
+
+document.getElementById("demo").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+}
